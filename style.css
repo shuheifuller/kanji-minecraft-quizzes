@@ -1,63 +1,51 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-  font-family: sans-serif;
-  background: #f0f0f0;
   margin: 0;
   padding: 0;
-}
-.container {
-  background: white;
-  padding: 5vw;
-  max-width: 800px;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-h1 {
+  font-family: 'Press Start 2P', cursive;
+  background-image: url('images/minecraft_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
   text-align: center;
-  font-size: 6vw;
 }
-img.header-img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 4vw;
+
+.minecraft-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: brightness(0.6);
 }
-p, label {
-  font-size: 4.5vw;
-  line-height: 1.6;
+
+.minecraft-title {
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border: 3px solid #55ff55;
+  margin-bottom: 30px;
+  color: #55ff55;
+  box-shadow: 0 0 10px #55ff55;
 }
-.answers label {
+
+.minecraft-menu a {
   display: block;
-  margin: 2vw 0;
-  padding: 3vw;
-  background: #e0f0ff;
-  border-radius: 5px;
-  cursor: pointer;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  margin: 10px;
+  text-decoration: none;
+  border: 2px solid #999;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.correct { background: #c8f7c5; }
-.wrong { background: #f7c5c5; }
-.explanation {
-  display: none;
-  margin-top: 2vw;
-  font-size: 4vw;
-  padding: 2vw;
-  background: #fff9e6;
-  border-left: 5px solid #ffc107;
-}
-#result {
-  margin-top: 6vw;
-  font-size: 5vw;
-  text-align: center;
-  font-weight: bold;
-}
-button {
-  display: block;
-  margin: 6vw auto;
-  padding: 3vw 5vw;
-  font-size: 4.5vw;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+
+.minecraft-menu a:hover {
+  background: rgba(85, 255, 85, 0.8);
+  color: #000;
+  border-color: #55ff55;
 }
